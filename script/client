@@ -1,0 +1,12 @@
+#!/bin/sh
+set -e
+cd "$(dirname "$0")/../client"
+
+if ! command -v yarn >/dev/null; then
+  echo "error: Please install Nodejs and 'yarn'" >&2
+  echo "       brew install nodejs && npm install -g yarn" >&2
+  exit 1
+fi
+
+yarn install
+yarn start

@@ -1,0 +1,10 @@
+#!/bin/sh
+set -e
+cd "$(dirname "$0")/.."
+
+
+if command -v jl >/dev/null; then
+  go run main.go 2>&1 | jl
+else
+  go run main.go
+fi
