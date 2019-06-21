@@ -26,10 +26,6 @@ This project was created as an assignment for KrampHub.nl
 > performance) may not affect the results originating from the other
 > upstream service.
 
-### Demo
-
-Running at: https://kramp-demo.netlify.com/
-
 ## Local Development
 
 This project is created using [Go](https://golang.org/). This repository followw the 
